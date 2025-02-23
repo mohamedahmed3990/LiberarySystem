@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="header"> <i class="fa-solid fa-book-open"></i> Library System</h1>
+    <div class="container">
+
+        <div id="number-container">
+                <div class="content">
+                    <label for="number">Enter Number of Books:</label>
+                    <input placeholder="Enter Number of Books" id="number" name="booksNumber" type="number" min="1">
+                    <span class="num-error error hide"></span>
+        
+                    <button id="add-number-btn">ADD</button>
+                </div>
+    
+                <!-- <div class="image">
+                   <img src="./22.png" alt="">
+                </div>  -->
+        </div>
+    
+    
+        <div id="form-container" class="hide show-form">
+           
+            <form action="">
+                <div class="form-group">
+                    <label for="book-name">Book Name:</label>
+                    <input  type="text" id="book-name" name="bookName">
+                </div>
+                <span class="bName-error error hide"></span>
+    
+                <div class="form-group">
+                    <label for="book-price">Book Price:</label>
+                    <input type="text" id="book-price" name="bookPrice">
+                </div>
+                <span class="bPrice-error error hide"></span>
+    
+                <div class="form-group">
+                    <label for="author-name">Author Name:</label>
+                    <input type="text" id="author-name" name="authorName">
+                </div>
+                <span class="aName-error error hide"></span>
+    
+                <div class="form-group">
+                    <label for="author-email">Author Email:</label>
+                    <input placeholder="username123@example.com" type="email" id="author-email" name="authorEmail">
+                </div>
+                <span class="aEmail-error error hide"></span>
+    
+                <button id="add-book-btn">Add Book</button>
+            </form>
+           
+        </div>
+    
+    
+        <div id="table-container" class="hide">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Author Name</th>
+                        <th>Author Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="image">
+    
+    
+            <img src="./22.png" alt="">
+         </div> 
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+
+</html>
